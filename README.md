@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
 
 ```
 brew install ffmpeg
-gem install specific_install
+gem install bundler specific_install
 gem specific_install yagince/thumbnailer
 ```
 
