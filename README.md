@@ -17,7 +17,7 @@ gem specific_install yagince/thumbnailer
 ## Usage
 
 ```
-$ bin/thumbnailer help gen
+$ thumbnailer help gen
 
 Usage:
   thumbnailer gen MOVIE_DIR -n, --thumbnail-count=N -o, --output-dir=OUTPUT_DIR -s, --size=SIZE
