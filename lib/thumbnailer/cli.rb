@@ -6,12 +6,12 @@ require 'string_ext'
 
 class Thumbnailer::CLI < Thor
 
-  desc 'gen MOVIE_DIR', 'generate thumbnails'
-  option :size,            type: :string,  required: true, default: '500x282',    aliases: '-s',  desc: 'size of thumbnail. "{width}x{height}" ex) 125x70'
-  option :output_dir,      type: :string,  required: true, default: 'thumbnails', aliases: '-o',  desc: 'output directory path'
-  option :thumbnail_count, type: :numeric, required: true, default: 16,           aliases: '-n',  desc: 'number of thumbnails'
-  option :thumbnail_format,type: :string,  required: true, default: 'png',                        desc: 'format of thubnail file ex) png, jpg'
-  option :video_format,    type: :string,  required: true, default: 'mp4',                        desc: 'format of video file ex) mp4'
+  desc 'gen ${動画ファイルがあるディレクトリ}', 'generate thumbnails'
+  option :size,            type: :string,  required: true, default: '500x282',    aliases: '-s',  desc: 'サムネイルのサイズ "{width}x{height}" ex) 125x70'
+  option :output_dir,      type: :string,  required: true, default: 'thumbnails', aliases: '-o',  desc: '作成されたサムネイルの出力先'
+  option :thumbnail_count, type: :numeric, required: true, default: 16,           aliases: '-n',  desc: 'サムネイルの作成枚数'
+  option :thumbnail_format,type: :string,  required: true, default: 'png',                        desc: 'サムネイルのファイル形式 ex) png, jpg'
+  option :video_format,    type: :string,  required: true, default: 'mp4',                        desc: '動画ファイルのフォーマット ex) mp4'
   def gen(movie_dir='./')
     video_format = options[:video_format]
 
