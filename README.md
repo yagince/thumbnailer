@@ -11,7 +11,7 @@ Add this line to your application's Gemfile:
 ```
 brew install ffmpeg
 gem install bundler specific_install
-gem specific_install yagince/thumbnailer
+gem specific_install https://github.com/yagince/thumbnailer
 ```
 
 ## Usage
